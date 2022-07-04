@@ -3,6 +3,14 @@
 # application-helm-charts
 
 
+Application Helm Charts
+
+- Game App v0.1.0
+- Game App Ingress v0.1.0
+- Game App Full  v0.2.0
+
+
+
 Helm Tutorials:
 
 https://helm.sh/docs/topics/chart_repository/
@@ -21,6 +29,14 @@ How to create Custom Helm Charts:
 
 https://medium.com/containerum/how-to-make-and-share-your-own-helm-package-50ae40f6c221
 
+
+################ Chart Releaser Action #############################
+
+https://github.com/helm/chart-releaser-action
+
+https://helm.sh/docs/howto/chart_releaser_action/#github-actions-workflow
+
+https://lippertmarkus.com/2020/08/13/chartreleaser/
 
 
 Commands:

@@ -1,0 +1,34 @@
+# Default values for game-app.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+
+environment:
+  releaseName: dev-rel
+
+namespace:
+  enabled: false
+  name:
+
+nameOverride: ""
+fullnameOverride: ""
+
+replicaCount: 3
+
+deployment:
+  name: ""
+
+image:
+  repository: public.ecr.aws/l6m2t8p7/docker-2048    #public.ecr.aws/nginx/nginx:1.21
+  pullPolicy: Always
+  tag: "latest"
+  containerPort: 80
+
+
+service:
+  name: ""
+  type: NodePort
+  port: 80
+  targetPort: 80
+  protocol: TCP
+
