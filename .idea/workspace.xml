@@ -4,7 +4,7 @@
     <list default="true" id="c1e457b0-65db-4c2c-8e82-53e64322b44e" name="Changes" comment="Chart for all apps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/game-app-full/templates/game-app-namespace.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/game-app-full/templates/game-app-namespace.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/game-app-full/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/game-app-full/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/game-app/Chart.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/game-app/Chart.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657026323550</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Chart for all apps">
+      <created>1657111981349</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657111981350</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
