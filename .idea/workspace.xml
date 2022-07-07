@@ -4,7 +4,6 @@
     <list default="true" id="c1e457b0-65db-4c2c-8e82-53e64322b44e" name="Changes" comment="Chart for all apps">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/charts/game-app-full/templates/game-app-namespace.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/game-app-full/templates/game-app-namespace.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/game-app/Chart.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/game-app/Chart.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,15 +22,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TF_FMT": "false",
-    "last_opened_file_path": "C:/Users/suvendu.mandal/source/repos/application-helm-charts"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TF_FMT&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/suvendu.mandal/source/repos/application-helm-charts&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\suvendu.mandal\source\repos\application-helm-charts\charts" />
@@ -132,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657111981350</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Chart for all apps">
+      <created>1657112224374</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657112224376</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
