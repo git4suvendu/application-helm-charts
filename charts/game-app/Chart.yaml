@@ -2,7 +2,7 @@ apiVersion: v2
 name: game-app
 description: A Helm chart for any full game application (Deployment, Service and Ingress)
 type: application
-version: 0.1.1
+version: 0.1.0
 appVersion: 1.16.0
 home: https://github.com/git4suvendu/game-app/tree/master/helm
 sources:
