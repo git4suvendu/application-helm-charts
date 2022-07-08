@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e457b0-65db-4c2c-8e82-53e64322b44e" name="Changes" comment="added nginx server">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/cr.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/cr.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cr.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/release.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/nginx-server/Chart.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/nginx-server/Chart.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +33,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\suvendu.mandal\source\repos\application-helm-charts" />
       <recent name="C:\Users\suvendu.mandal\source\repos\application-helm-charts\charts" />
     </key>
   </component>
@@ -175,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657294921535</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added nginx server">
+      <created>1657296186776</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1657296186776</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
