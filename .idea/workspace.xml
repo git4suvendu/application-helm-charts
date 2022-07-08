@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c1e457b0-65db-4c2c-8e82-53e64322b44e" name="Changes" comment="added nginx server">
       <change beforePath="$PROJECT_DIR$/.github/workflows/release.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/release.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/nginx-server/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/nginx-server/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cr.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657296329021</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added nginx server">
+      <created>1657296545303</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657296545303</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

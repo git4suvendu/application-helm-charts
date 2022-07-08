@@ -33,8 +33,6 @@ service:
   protocol: TCP
 
 
-
-
 ingress:
   name: ""
   enabled: true
