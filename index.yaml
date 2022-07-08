@@ -150,4 +150,27 @@ entries:
     urls:
     - https://github.com/git4suvendu/application-helm-charts/releases/download/game-app-ingress-0.1.0/game-app-ingress-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-07T03:27:48.092831522Z"
+  nginx-server:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-08T16:10:08.447900989Z"
+    description: A Helm chart for any full game application (Deployment, Service and
+      Ingress)
+    digest: 95489eb7616c67bb747a6c09aaf26ec89b338bc7f2aaa3c8a8d3a0bb224d9447
+    home: https://github.com/git4suvendu/application-helm-charts
+    keywords:
+    - server
+    - nginx
+    - proxy
+    maintainers:
+    - email: m_andal2002@yahoo.co.in
+      name: Suvendu Mandal
+      url: https://github.com/git4suvendu
+    name: nginx-server
+    sources:
+    - https://github.com/git4suvendu/application-helm-charts
+    type: application
+    urls:
+    - https://github.com/git4suvendu/application-helm-charts/releases/download/nginx-server-0.1.0/nginx-server-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-07-08T16:10:08.447916689Z"
