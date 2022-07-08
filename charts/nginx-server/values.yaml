@@ -19,9 +19,9 @@ deployment:
   name: ""
 
 image:
-  repository: public.ecr.aws/nginx/nginx:1.21
+  repository: public.ecr.aws/nginx/nginx
   pullPolicy: Always
-  tag: "latest"
+  tag: "1.21"
   containerPort: 80
 
 
