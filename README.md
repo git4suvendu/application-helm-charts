@@ -8,6 +8,7 @@ Application Helm Charts
 - Game App v0.1.0
 - Game App Ingress v0.1.0
 - Game App Full  v0.2.0
+- Nginx server 0.1.0
 
 
 

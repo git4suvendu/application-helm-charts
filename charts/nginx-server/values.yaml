@@ -11,7 +11,7 @@ namespace:
   name: ""
 
 nameOverride: ""
-fullnameOverride: "nginx-server"
+fullnameOverride: ""
 
 replicaCount: 3
 
