@@ -1,0 +1,18 @@
+apiVersion: v2
+name: generic-app
+description: A Helm chart for any full game application (Deployment, Service and Ingress)
+type: application
+version: 0.2.0
+appVersion: 1.16.0
+home: https://github.com/git4suvendu/application-helm-charts
+sources:
+  - https://github.com/git4suvendu/application-helm-charts
+maintainers:
+  - name: Suvendu Mandal
+    url: https://github.com/git4suvendu
+    email: m_andal2002@yahoo.co.in
+keywords:
+  - app
+  - generic-application
+  - generic-application-template
+
