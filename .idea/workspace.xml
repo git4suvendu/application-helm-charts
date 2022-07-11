@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c1e457b0-65db-4c2c-8e82-53e64322b44e" name="Changes" comment="added nginx server">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/nginx-server/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/nginx-server/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/charts/game-app-full/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/charts/game-app-full/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657298929871</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added nginx server">
+      <created>1657301651665</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1657301651665</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
