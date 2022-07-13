@@ -153,6 +153,28 @@ entries:
   generic-app:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-07-13T13:02:30.752857893Z"
+    description: A Helm chart for any full game application (Deployment, Service and
+      Ingress)
+    digest: efeaa0dc45430bae6ee3964de680c0a63f9f96bc2a2f773d434ff5696b3b14db
+    home: https://github.com/git4suvendu/application-helm-charts
+    keywords:
+    - app
+    - generic-application
+    - generic-application-template
+    maintainers:
+    - email: m_andal2002@yahoo.co.in
+      name: Suvendu Mandal
+      url: https://github.com/git4suvendu
+    name: generic-app
+    sources:
+    - https://github.com/git4suvendu/application-helm-charts
+    type: application
+    urls:
+    - https://github.com/git4suvendu/application-helm-charts/releases/download/generic-app-0.2.1/generic-app-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-07-11T06:15:51.065426163Z"
     description: A Helm chart for any full game application (Deployment, Service and
       Ingress)
@@ -196,4 +218,4 @@ entries:
     urls:
     - https://github.com/git4suvendu/application-helm-charts/releases/download/nginx-server-0.1.0/nginx-server-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-11T06:15:51.211259011Z"
+generated: "2022-07-13T13:02:30.752879993Z"
