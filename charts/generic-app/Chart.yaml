@@ -2,7 +2,7 @@ apiVersion: v2
 name: generic-app
 description: A Helm chart for any full game application (Deployment, Service and Ingress)
 type: application
-version: 0.2.0
+version: 0.2.1
 appVersion: 1.16.0
 home: https://github.com/git4suvendu/application-helm-charts
 sources:

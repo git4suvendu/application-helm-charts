@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1e457b0-65db-4c2c-8e82-53e64322b44e" name="Changes" comment="added generic app">
+    <list default="true" id="c1e457b0-65db-4c2c-8e82-53e64322b44e" name="Changes" comment="Updated generic app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/generic-app-full/.helmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/generic-app-full/Chart.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/generic-app-full/templates/_helpers.tpl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/generic-app-full/templates/deployment.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/generic-app-full/templates/ingress.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/generic-app-full/templates/namespace.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/generic-app-full/templates/service.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/charts/generic-app-full/values.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1657520125323</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Updated generic app">
+      <created>1657520317719</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1657520317719</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Updated generic app">
+      <created>1657520330520</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1657520330520</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,6 +263,7 @@
     <MESSAGE value="Chart for all apps" />
     <MESSAGE value="added nginx server" />
     <MESSAGE value="added generic app" />
-    <option name="LAST_COMMIT_MESSAGE" value="added generic app" />
+    <MESSAGE value="Updated generic app" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated generic app" />
   </component>
 </project>
