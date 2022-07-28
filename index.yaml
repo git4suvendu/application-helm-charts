@@ -195,6 +195,50 @@ entries:
     urls:
     - https://github.com/git4suvendu/application-helm-charts/releases/download/generic-app-0.2.0/generic-app-0.2.0.tgz
     version: 0.2.0
+  generic-application:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-28T23:43:19.728603357Z"
+    description: A Helm chart for generic-application (Deployment, Service and Ingress)
+    digest: 11a08e1eb6dd6121595fa8f4abe0f02913e9f58c66c9e6c055878c235b5b776a
+    home: https://literate-fortnight-d7316f29.pages.github.io/helm-charts
+    keywords:
+    - app
+    - generic-application
+    - generic-application-template
+    maintainers:
+    - email: suvendu.mandal@landg.com
+      name: L&G
+      url: https://github.com/Legal-and-General-Group-Shared
+    name: generic-application
+    sources:
+    - https://github.com/Legal-and-General-Group-Shared/helm-charts
+    type: application
+    urls:
+    - https://github.com/git4suvendu/application-helm-charts/releases/download/generic-application-0.1.0/generic-application-0.1.0.tgz
+    version: 0.1.0
+  generic-application-landg-updated:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-28T23:43:19.867658506Z"
+    description: A Helm chart for generic-application (Deployment, Service and Ingress)
+    digest: d80f4367a2a9ff1e6efc54d4481f1d43dd86bcccdd400e2bc756116254ea50e5
+    home: https://github.com/git4suvendu/application-helm-charts
+    keywords:
+    - app
+    - generic-application-landg-updated
+    - generic-application-template
+    maintainers:
+    - email: suvendu.mandal@landg.com
+      name: Suvendu Mandal
+      url: https://github.com/git4suvendu
+    name: generic-application-landg-updated
+    sources:
+    - https://github.com/git4suvendu/application-helm-charts
+    type: application
+    urls:
+    - https://github.com/git4suvendu/application-helm-charts/releases/download/generic-application-landg-updated-0.2.0/generic-application-landg-updated-0.2.0.tgz
+    version: 0.2.0
   nginx-server:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -218,4 +262,4 @@ entries:
     urls:
     - https://github.com/git4suvendu/application-helm-charts/releases/download/nginx-server-0.1.0/nginx-server-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-13T13:02:30.752879993Z"
+generated: "2022-07-28T23:43:19.867834209Z"
