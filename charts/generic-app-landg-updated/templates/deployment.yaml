@@ -1,0 +1,29 @@
+
+{{- if .Values.deployment.enabled -}}
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "business-app.deploymentName" . }}
+  namespace: {{ .Release.Namespace }}
+  annotations:
+    {{- include "business-app.annotations" . | nindent 4 }}
+  labels:
+    {{- include "business-app.labels" . | nindent 4 }}
+spec:
+  selector:
+    matchLabels:
+      {{- include "business-app.selectorLabels" . | nindent 6 }}
+  replicas: {{ .Values.replicaCount }}
+  template:
+    metadata:
+      labels:
+        {{- include "business-app.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - image:  "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        name: {{ include "business-app.name" . }}
+        ports:
+        - containerPort: {{ .Values.image.containerPort }}
+{{- end }}

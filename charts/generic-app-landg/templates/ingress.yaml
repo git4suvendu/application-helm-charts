@@ -1,0 +1,30 @@
+{{- if .Values.ingress.enabled -}}
+
+  {{- $defaultServiceName := include "business-app.serviceName" . -}}
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: {{ .Release.Namespace }}
+  name: {{ include "business-app.ingressName" .  }}
+  annotations: 
+    {{- include "business-app.defaultIngressAnnotations" . | nindent 4 }}
+    {{- toYaml .Values.ingress.userAnnotations | nindent 4 }}
+    {{- include "business-app.annotations" . | nindent 4 }}
+  labels:
+    {{- include "business-app.labels" . | nindent 4 }}
+spec:
+  rules:
+    - http:
+        paths:
+        {{- range .Values.ingress.paths }}
+        - path: {{ .path }}
+          pathType: {{ .pathType }}
+          backend:
+            service:
+                name: {{ if contains "sample-service" .svcName }}{{ $defaultServiceName }}{{ else }}{{ .svcName }}{{ end }}
+                port:
+                   number: {{ .svcPort }}
+        {{- end }}
+
+{{- end }}

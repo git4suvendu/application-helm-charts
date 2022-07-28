@@ -1,0 +1,18 @@
+apiVersion: v2
+name: generic-application
+description: A Helm chart for generic-application (Deployment, Service and Ingress)
+type: application
+version: 0.1.0
+appVersion: 1.16.0
+home: https://literate-fortnight-d7316f29.pages.github.io/helm-charts
+sources:
+  - https://github.com/Legal-and-General-Group-Shared/helm-charts
+maintainers:
+  - name: L&G
+    url: https://github.com/Legal-and-General-Group-Shared
+    email: suvendu.mandal@landg.com
+keywords:
+  - app
+  - generic-application
+  - generic-application-template
+  

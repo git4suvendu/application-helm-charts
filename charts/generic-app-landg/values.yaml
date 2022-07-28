@@ -1,0 +1,62 @@
+# Default values for game-app.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+
+environment:
+  releaseName: sample-env-release
+
+namespace:
+  enabled: false
+  name: ""
+
+nameOverride: ""
+fullnameOverride: ""
+
+replicaCount: 3
+
+deployment:
+  enabled: true
+  name: ""
+
+image:
+  repository:    #public.ecr.aws/nginx/nginx:1.21
+  pullPolicy: Always
+  tag: 
+  containerPort:
+
+
+service:
+  name: ""
+  enabled: true
+  type: NodePort
+  port: 80
+  targetPort: 80
+  protocol: TCP
+
+
+
+ingress:
+  name: ""
+  enabled: "false"
+  userAnnotations: 
+    landg/ingress.group: "lgrs"
+  defaultAnnotations:
+    ingressType:
+      ingressClass: "alb"
+      ingressScheme: internal
+      ingressTargetType: ip
+    healthCheck:
+      healthCheckProtocol: "HTTP" 
+      healthCheckPath: "/example-service/hello"
+      healthCheckIntervalSeconds: "15"
+      healthCheckTimeoutSeconds: "5"
+      heathCheckSuccessCodes: "200"
+      healthyThresholdCount: "2"
+      unhealthyThresholdCount: "2"
+  paths:
+    - path: /sample-path
+      pathType: Prefix
+      svcName: "sample-service1"
+      svcPort: 80
+
