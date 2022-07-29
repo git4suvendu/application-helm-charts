@@ -107,7 +107,7 @@ Common labels
 helm.sh/chart: {{ include "business-app.chart" . }}
 {{ include "business-app.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
-app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
+app.kubernetes.io/version: {{ .Chart.AppVersion  }}
 {{- end }}
 {{- end }}
 
