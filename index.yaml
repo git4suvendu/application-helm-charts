@@ -198,6 +198,27 @@ entries:
   generic-app-landg:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-07-29T01:55:30.799977847Z"
+    description: A Helm chart for any full game application (Deployment, Service and
+      Ingress)
+    digest: 9e16cc7cf65c4d6772491da25a8e95b11faac54d3f20e441dec4316d91865bd1
+    home: https://github.com/git4suvendu/application-helm-charts
+    keywords:
+    - landg
+    - generic-app-landg
+    maintainers:
+    - email: m_andal2002@yahoo.co.in
+      name: Suvendu Mandal
+      url: https://github.com/git4suvendu
+    name: generic-app-landg
+    sources:
+    - https://github.com/git4suvendu/application-helm-charts
+    type: application
+    urls:
+    - https://github.com/git4suvendu/application-helm-charts/releases/download/generic-app-landg-0.1.2/generic-app-landg-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-07-29T01:44:50.139473386Z"
     description: A Helm chart for any full game application (Deployment, Service and
       Ingress)
@@ -328,4 +349,4 @@ entries:
     urls:
     - https://github.com/git4suvendu/application-helm-charts/releases/download/nginx-server-0.1.0/nginx-server-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-29T01:44:50.139491386Z"
+generated: "2022-07-29T01:55:30.800004247Z"
