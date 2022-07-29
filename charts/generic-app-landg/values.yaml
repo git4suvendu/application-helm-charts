@@ -8,26 +8,26 @@ environment:
 
 namespace:
   enabled: false
-  name: ""
+  name:
 
-nameOverride: ""
-fullnameOverride: ""
+nameOverride:
+fullnameOverride:
 
 replicaCount: 3
 
 deployment:
-  name: ""
+  name:
 
 image:
-  repository: public.ecr.aws/l6m2t8p7/docker-2048    #public.ecr.aws/nginx/nginx:1.21
+  repository: public.ecr.aws/nginx/nginx   #public.ecr.aws/l6m2t8p7/docker-2048 
   pullPolicy: Always
-  tag: "latest"
-  containerName: test-container-name
+  tag: "1.21"  # "latest"
+  containerName:
   containerPort: 80
 
 
 service:
-  name: ""
+  name:
   type: NodePort
   port: 80
   targetPort: 80
@@ -36,27 +36,26 @@ service:
 
 
 ingress:
-  name: ""
+  name:
   enabled: true
-  className: "alb"
   userAnnotations: 
     org.landg/group: "LGRS"
   defaultAnnotations:
     ingressType:
       ingressClass: "alb"
-      ingressScheme: internal
+      ingressScheme: internal  #internet-facing   
       ingressTargetType: ip
     healthCheck:
       healthCheckProtocol: "HTTP" 
-      healthCheckPath: "/example-service/hello"
+      healthCheckPath: "/"
       healthCheckIntervalSeconds: "15"
       healthCheckTimeoutSeconds: "5"
       heathCheckSuccessCodes: "200"
       healthyThresholdCount: "2"
       unhealthyThresholdCount: "2"
   paths:
-    - path: /foo/
+    - path: /
       pathType: Prefix
-      svcName: "sample-service1"
+      svcName: "sample-service1"  
       svcPort: 80
 
