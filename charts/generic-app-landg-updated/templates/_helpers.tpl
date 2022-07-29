@@ -145,6 +145,7 @@ kubernetes.io/ingress.class: {{ .Values.ingress.defaultAnnotations.ingressType.i
 Common Annotations for all the Manifests
 */}}
 {{- define "business-app.annotations" -}}
+org.landg/group: LGRS
 {{- end }}
 
 
