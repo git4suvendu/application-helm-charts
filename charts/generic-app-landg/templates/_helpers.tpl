@@ -2,11 +2,7 @@
 Expand the name of the chart.
 */}}
 {{- define "business-app.name" -}}
-{{- if .Values.fullnameOverride }}
-{{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
-{{- else }}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
-{{- end }}
 {{- end }}
 
 {{/*
