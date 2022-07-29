@@ -8,16 +8,16 @@ environment:
 
 namespace:
   enabled: false
-  name: ""
+  name:
 
-nameOverride: ""
+nameOverride:
 fullnameOverride: "test-sample-app"
 
 replicaCount: 3
 
 deployment:
   enabled: true
-  name: ""
+  name:
 
 image:
   repository: public.ecr.aws/nginx/nginx
@@ -27,7 +27,7 @@ image:
 
 
 service:
-  name: ""
+  name:
   enabled: true
   type: NodePort
   port: 80
@@ -37,8 +37,10 @@ service:
 
 
 ingress:
-  name: ""
-  enabled: "true"
+  name: 
+  enabled: true
+  userAnnotations: 
+    landg.ingress/group: LGRS
   defaultAnnotations:
     ingressType:
       ingressClass: alb
