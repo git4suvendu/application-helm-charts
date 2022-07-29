@@ -40,10 +40,18 @@ ingress:
   className: "alb"
   userAnnotations: 
     landg/ingress.group: "lgrs"
-  annotations:
-    kubernetes.io/ingress.class: "alb"
-    alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/target-type: ip
+  defaultAnnotations:
+    ingressType:
+      ingressClass: "alb"
+      ingressScheme: internal
+      ingressTargetType: ip
+    healthCheck:
+      healthCheckProtocol: "HTTP" 
+      healthCheckPath: "/example-service/hello"
+      healthCheckIntervalSeconds: "15"
+      healthCheckTimeoutSeconds: "5"
+      heathCheckSuccessCodes: "200"
+      healthyThresholdCount: "2"
   paths:
     - path: /foo/
       pathType: Prefix

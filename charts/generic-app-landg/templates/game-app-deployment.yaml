@@ -4,7 +4,7 @@ metadata:
   name: {{ include "business-app.deploymentName" . }}
   namespace: {{ .Release.Namespace }}
   annotations:
-    {{- include "business-app.annotations" . | nindent 4 }}
+    {{- include "business-app.CommonAnnotations" . | nindent 4 }}
   labels:
     {{- include "business-app.labels" . | nindent 4 }}
 spec:
