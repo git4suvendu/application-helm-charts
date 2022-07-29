@@ -22,7 +22,7 @@ image:
   repository: public.ecr.aws/l6m2t8p7/docker-2048    #public.ecr.aws/nginx/nginx:1.21
   pullPolicy: Always
   tag: "latest"
-  containerName:
+  containerName: test-container
   containerPort: 80
 
 
