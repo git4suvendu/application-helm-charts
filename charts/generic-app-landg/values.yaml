@@ -22,6 +22,7 @@ image:
   repository: public.ecr.aws/l6m2t8p7/docker-2048    #public.ecr.aws/nginx/nginx:1.21
   pullPolicy: Always
   tag: "latest"
+  containerName: test-container-name
   containerPort: 80
 
 
@@ -39,7 +40,7 @@ ingress:
   enabled: true
   className: "alb"
   userAnnotations: 
-    landg/ingress.group: "lgrs"
+    org.landg/group: "LGRS"
   defaultAnnotations:
     ingressType:
       ingressClass: "alb"
@@ -57,13 +58,5 @@ ingress:
     - path: /foo/
       pathType: Prefix
       svcName: "sample-service1"
-      svcPort: 80
-    - path: /bar/
-      pathType: Prefix
-      svcName: "sample-service2"
-      svcPort: 80
-    - path: /
-      pathType: Prefix
-      svcName: "sample-service3"
       svcPort: 80
 
