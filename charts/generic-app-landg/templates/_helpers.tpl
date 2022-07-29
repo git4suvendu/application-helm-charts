@@ -147,10 +147,14 @@ Common Annotations
   Ingress Annotations for LB and Health Checks
 */}}
 {{- define "business-app.defaultIngressAnnotations" -}}
-kubernetes.io/ingress.class: {{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/scheme: {{ .Values.ingress.defaultAnnotations.ingressType.ingressScheme }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/target-type: {{ .Values.ingress.defaultAnnotations.ingressType.ingressTargetType }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-protocol: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckProtocol }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-path: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckPath }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-interval-seconds: "{{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckIntervalSeconds }}"
+kubernetes.io/ingress.class: {{ .Values.ingress.defaultAnnotations.ingressType.ingressClass | quote }}
+{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/scheme: {{ .Values.ingress.defaultAnnotations.ingressType.ingressScheme | quote }}
+{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/target-type: {{ .Values.ingress.defaultAnnotations.ingressType.ingressTargetType | quote }}
+{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-protocol: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckProtocol | quote }}
+{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-path: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckPath | quote }}
+{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-interval-seconds: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckIntervalSeconds | quote }}
+{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-timeout-seconds: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckTimeoutSeconds | quote }}
+{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/success-codes: {{ .Values.ingress.defaultAnnotations.healthCheck.heathCheckSuccessCodes | quote }}
+{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthy-threshold-count: {{ .Values.ingress.defaultAnnotations.healthCheck.healthyThresholdCount | quote }}
+{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/unhealthy-threshold-count: {{ .Values.ingress.defaultAnnotations.healthCheck.unhealthyThresholdCount | quote }}
 {{- end }}
