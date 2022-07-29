@@ -16,19 +16,17 @@ fullnameOverride: ""
 replicaCount: 3
 
 deployment:
-  enabled: true
   name: ""
 
 image:
-  repository:    #public.ecr.aws/nginx/nginx:1.21
+  repository: public.ecr.aws/l6m2t8p7/docker-2048    #public.ecr.aws/nginx/nginx:1.21
   pullPolicy: Always
-  tag: 
-  containerPort:
+  tag: "latest"
+  containerPort: 80
 
 
 service:
   name: ""
-  enabled: true
   type: NodePort
   port: 80
   targetPort: 80
@@ -38,25 +36,25 @@ service:
 
 ingress:
   name: ""
-  enabled: "false"
+  enabled: true
+  className: "alb"
   userAnnotations: 
     landg/ingress.group: "lgrs"
-  defaultAnnotations:
-    ingressType:
-      ingressClass: "alb"
-      ingressScheme: internal
-      ingressTargetType: ip
-    healthCheck:
-      healthCheckProtocol: "HTTP" 
-      healthCheckPath: "/example-service/hello"
-      healthCheckIntervalSeconds: "15"
-      healthCheckTimeoutSeconds: "5"
-      heathCheckSuccessCodes: "200"
-      healthyThresholdCount: "2"
-      unhealthyThresholdCount: "2"
+  annotations:
+    kubernetes.io/ingress.class: "alb"
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
   paths:
-    - path: /sample-path
+    - path: /foo/
       pathType: Prefix
       svcName: "sample-service1"
+      svcPort: 80
+    - path: /bar/
+      pathType: Prefix
+      svcName: "sample-service2"
+      svcPort: 80
+    - path: /
+      pathType: Prefix
+      svcName: "sample-service3"
       svcPort: 80
 
