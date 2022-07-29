@@ -1,4 +1,5 @@
-{{- $defaultContainerName := include "business-app.name" . -}}
+
+{{- if .Values.deployment.enabled -}}
 
 apiVersion: apps/v1
 kind: Deployment
@@ -25,3 +26,4 @@ spec:
         name: {{ include "business-app.name" . }}
         ports:
         - containerPort: {{ .Values.image.containerPort }}
+{{- end }}
