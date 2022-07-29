@@ -39,8 +39,6 @@ service:
 ingress:
   name: ""
   enabled: "true"
-  userAnnotations: 
-    landg.ingress/group: LGRS
   defaultAnnotations:
     ingressType:
       ingressClass: alb
