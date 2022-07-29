@@ -7,9 +7,6 @@ kind: Ingress
 metadata:
   namespace: {{ .Release.Namespace }}
   name: {{ include "business-app.ingressName" .  }}
-  annotations: 
-    {{- include "business-app.defaultIngressAnnotations" . | nindent 4 }}
-    {{- include "business-app.annotations" . | nindent 4 }}
   labels:
     {{- include "business-app.labels" . | nindent 4 }}
 spec:
