@@ -152,5 +152,5 @@ kubernetes.io/ingress.class: {{ .Values.ingress.defaultAnnotations.ingressType.i
 {{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/target-type: {{ .Values.ingress.defaultAnnotations.ingressType.ingressTargetType }}
 {{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-protocol: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckProtocol }}
 {{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-path: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckPath }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-interval-seconds: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckIntervalSeconds }}
+{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-interval-seconds: "{{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckIntervalSeconds }}"
 {{- end }}
