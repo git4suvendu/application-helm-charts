@@ -8,7 +8,7 @@ metadata:
   namespace: {{ .Release.Namespace }}
   name: {{ include "business-app.ingressName" .  }}
   annotations:
-    {{- include "business-app.defaultIngressAnnotations" . | nindent 4 }}
+    {{- toYaml .Values.ingress.annotations | nindent 4 }}
     {{- include "business-app.annotations" . | nindent 4 }}
     {{- include "business-app.userAnnotations" . | nindent 4 }}
   labels:
