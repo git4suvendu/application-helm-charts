@@ -40,15 +40,15 @@ ingress:
   name: ""
   enabled: "true"
   userAnnotations: 
-    landg.ingress/group: "LGRS"
+    landg.ingress/group: LGRS
   defaultAnnotations:
     ingressType:
-      ingressClass: "alb"
+      ingressClass: alb
       ingressScheme: internal
       ingressTargetType: ip
     healthCheck:
-      healthCheckProtocol: "HTTP" 
-      healthCheckPath: "/"
+      healthCheckProtocol: HTTP
+      healthCheckPath: /
       healthCheckIntervalSeconds: 15
       healthCheckTimeoutSeconds: 5
       heathCheckSuccessCodes: 200
