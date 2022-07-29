@@ -22,7 +22,7 @@ deployment:
 image:
   repository: public.ecr.aws/nginx/nginx
   pullPolicy: Always
-  tag: 1.21
+  tag: "1.21"
   containerPort: 80
 
 

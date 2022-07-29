@@ -1,8 +1,8 @@
 apiVersion: v2
-name: generic-application-landg-updated
-description: A Helm chart for generic-application (Deployment, Service and Ingress)
+name: generic-app-lang-updated
+description: A Helm chart for any full game application (Deployment, Service and Ingress)
 type: application
-version: 0.2.0
+version: 0.2.1
 appVersion: 1.16.0
 home: https://github.com/git4suvendu/application-helm-charts
 sources:
@@ -10,9 +10,9 @@ sources:
 maintainers:
   - name: Suvendu Mandal
     url: https://github.com/git4suvendu
-    email: suvendu.mandal@landg.com
+    email: m_andal2002@yahoo.co.in
 keywords:
   - app
-  - generic-application-landg-updated
+  - generic-application
   - generic-application-template
-  
+
