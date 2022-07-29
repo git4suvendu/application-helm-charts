@@ -145,4 +145,5 @@ Common Annotations
 User Annotations for ingress
 */}}
 {{- define "business-app.userAnnotations" -}}
+{{- toYaml .Values.ingress.userAnnotations }}
 {{- end }}
