@@ -1,6 +1,3 @@
-
-{{- if .Values.deployment.enabled -}}
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -26,4 +23,5 @@ spec:
         name: {{ include "business-app.name" . }}
         ports:
         - containerPort: {{ .Values.image.containerPort }}
-{{- end }}
+
+
