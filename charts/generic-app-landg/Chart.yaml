@@ -1,5 +1,5 @@
 apiVersion: v2
-name: game-app-full
+name: generic-app-landg
 description: A Helm chart for any full game application (Deployment, Service and Ingress)
 type: application
 version: 0.1.0
@@ -13,5 +13,5 @@ maintainers:
     email: m_andal2002@yahoo.co.in
 keywords:
   - app
-  - gameapp-full
+  - generic-app-landg
 
