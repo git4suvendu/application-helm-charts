@@ -8,25 +8,26 @@ environment:
 
 namespace:
   enabled: false
-  name: ""
+  name:
 
-nameOverride: ""
-fullnameOverride: ""
+nameOverride: 
+fullnameOverride:
 
 replicaCount: 3
 
 deployment:
-  name: ""
+  name:
 
 image:
   repository: public.ecr.aws/l6m2t8p7/docker-2048    #public.ecr.aws/nginx/nginx:1.21
   pullPolicy: Always
   tag: "latest"
+  containerName:
   containerPort: 80
 
 
 service:
-  name: ""
+  name:
   type: NodePort
   port: 80
   targetPort: 80
@@ -35,7 +36,7 @@ service:
 
 
 ingress:
-  name: ""
+  name:
   enabled: true
   className: "alb"
   userAnnotations: 
