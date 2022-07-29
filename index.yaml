@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  game-app-full:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-07-29T02:13:35.915006376Z"
+    description: A Helm chart for any full game application (Deployment, Service and
+      Ingress)
+    digest: 29c94a4b328734a5f4abb245e123eee08284b2d0b3673f19d22ca165aabb229f
+    home: https://github.com/git4suvendu/application-helm-charts
+    keywords:
+    - app
+    - gameapp-full
+    maintainers:
+    - email: m_andal2002@yahoo.co.in
+      name: Suvendu Mandal
+      url: https://github.com/git4suvendu
+    name: game-app-full
+    sources:
+    - https://github.com/git4suvendu/application-helm-charts
+    type: application
+    urls:
+    - https://github.com/git4suvendu/application-helm-charts/releases/download/game-app-full-0.1.0/game-app-full-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-07-29T02:13:35.915159576Z"
