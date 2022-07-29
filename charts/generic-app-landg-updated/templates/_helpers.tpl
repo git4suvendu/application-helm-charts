@@ -2,11 +2,7 @@
 Expand the name of the chart.
 */}}
 {{- define "business-app.name" -}}
-{{- if .Values.fullnameOverride }}
-{{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
-{{- else }}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
-{{- end }}
 {{- end }}
 
 {{/*
@@ -125,27 +121,9 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end }}
 
 {{/*
-  Ingress Annotations for LB and Health Checks
-*/}}
-{{- define "business-app.defaultIngressAnnotations" -}}
-kubernetes.io/ingress.class: {{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/scheme: {{ .Values.ingress.defaultAnnotations.ingressType.ingressScheme }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/target-type: {{ .Values.ingress.defaultAnnotations.ingressType.ingressTargetType }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-protocol: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckProtocol }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-path: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckPath }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-interval-seconds: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckIntervalSeconds }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthcheck-timeout-seconds: {{ .Values.ingress.defaultAnnotations.healthCheck.healthCheckTimeoutSeconds }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/success-codes: {{ .Values.ingress.defaultAnnotations.healthCheck.heathCheckSuccessCodes }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/healthy-threshold-count: {{ .Values.ingress.defaultAnnotations.healthCheck.healthyThresholdCount }}
-{{ .Values.ingress.defaultAnnotations.ingressType.ingressClass }}.ingress.kubernetes.io/unhealthy-threshold-count: {{ .Values.ingress.defaultAnnotations.healthCheck.unhealthyThresholdCount }}
-{{- end }}
-
-
-{{/*
-Common Annotations for all the Manifests
+Common Annotations
 */}}
 {{- define "business-app.annotations" -}}
-org.landg/group: LGRS
 {{- end }}
 
 

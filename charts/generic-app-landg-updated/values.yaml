@@ -7,7 +7,7 @@ environment:
   releaseName: sample-env-release
 
 namespace:
-  enabled: false
+  enabled: true
   name:
 
 nameOverride:
