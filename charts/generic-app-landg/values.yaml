@@ -11,7 +11,7 @@ namespace:
   name:
 
 nameOverride: 
-fullnameOverride:
+fullnameOverride: test-override-name
 
 replicaCount: 3
 
